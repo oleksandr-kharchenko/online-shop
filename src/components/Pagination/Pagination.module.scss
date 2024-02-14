@@ -1,0 +1,42 @@
+.pagination {
+  display: flex;
+  align-items: center;
+  align-self: center;
+  gap: 8px;
+}
+
+.paginationButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: calc(32px / 2);
+  background-color: var(--white);
+  transition: background-color 0.3s;
+
+  &.selected {
+    background-color: var(--blue);
+    color: var(--white);
+  }
+
+  &:hover {
+    background-color: var(--dark-blue);
+    color: var(--white);
+    fill: var(--white);
+  }
+
+  &:disabled {
+    background-color: var(--white);
+    fill: var(--grey);
+    cursor: not-allowed;
+  }
+
+  svg {
+    width: 20%;
+  }
+}
+
+.dots {
+  cursor: default;
+}

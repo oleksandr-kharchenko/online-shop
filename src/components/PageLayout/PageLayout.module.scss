@@ -1,0 +1,11 @@
+.pageLayout {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.mainSection {
+  height: calc(100vh - 50px);
+  overflow-y: auto;
+}

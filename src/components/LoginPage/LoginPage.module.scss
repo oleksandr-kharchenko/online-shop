@@ -1,0 +1,14 @@
+.loginPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--light-blue);
+}
+
+.hint {
+  font-size: 14px;
+  font-style: italic;
+  color: var(--dark-blue);
+}

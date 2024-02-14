@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: 'Arial';
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+:root {
+  --light-blue: #D1F4FF;
+  --blue: #3CAFFF;
+  --dark-blue: #008CED;
+  --white: #FFFFFF;
+  --black: #000000;
+  --grey: #A9A9A9;
+  --light-grey: #EAEAEA;
+  --red: #FF2F2F;
+}

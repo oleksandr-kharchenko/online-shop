@@ -1,0 +1,99 @@
+.productPage {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 60px;
+  align-items: center;
+  min-height: 100%;
+  background-color: var(--light-blue);
+  padding: 60px;
+
+  &.loading {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.productInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.title {
+  font-size: 32px;
+  color: var(--blue);
+}
+
+.description {
+  font-size: 14px;
+  color: var(--grey);
+}
+
+.secondaryInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.category {
+  font-weight: bold;
+}
+
+.absent {
+  font-size: 14px;
+  font-style: italic;
+  color: var(--grey);
+}
+
+.pricing {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  align-self: flex-end;
+}
+
+.price {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.formerPrice {
+  color: var(--grey);
+  text-decoration: line-through;
+}
+
+.purchaseButton {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-radius: 8px;
+  background-color: var(--blue);
+  padding: 8px;
+  transition: background-color 0.3s;
+
+  p {
+    font-size: 20px;
+    color: var(--white);
+  }
+
+  svg {
+    width: 20px;
+    fill: var(--white);
+  }
+
+  &:hover {
+    background-color: var(--dark-blue);
+  }
+
+  &:disabled {
+    background-color: var(--grey);
+    cursor: not-allowed;
+  }
+}
+
+.noData {
+  font-size: 24px;
+  font-style: italic;
+  color: var(--grey);
+  text-align: center;
+}
